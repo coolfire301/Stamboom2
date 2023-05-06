@@ -4,12 +4,12 @@
   box-sizing: border-box;
   color: #000000;
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 10px 0;
   justify-content: center;
   padding: 10px 17px;
   text-decoration: none;
-  width: 100px;
+  width: 30%;
   border: 2px black;
   cursor: pointer;
   user-select: none;
@@ -23,38 +23,14 @@ div {
 
 .content-container {
   width: 100%;
-  
-}
-
-.container {
-  background: #bea5aa;
-  margin: 30px auto;
-  width: 50%;
-  padding-top: 15px;
-  padding-left: 15px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-  border: 2px solid rgba(7, 7, 7, 0.12);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 select {
   font-size: 16px;
 }
 
-.aanhang {
-  margin: 0 10px;
-  font-size: 16px;
-}
-
-.child-field {
-    margin-left: 100px;
-  }
-
-/* CSS */
-
 .kind-toevoegen{
-  background-color: #f1486e;
+  background-color: #14456d;
   border-radius: .5rem;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -62,9 +38,9 @@ select {
   font-size: 16px;
   justify-content: center;
   padding: 10px 17px;
-  margin: 5px 0;
+  margin: 5px auto;
   text-decoration: none;
-  width: 400px;
+  width: 98%;
   border: 0;
   cursor: pointer;
   user-select: none;
@@ -73,7 +49,7 @@ select {
 }
 
 .kind-toevoegen:hover {
-  background-image:#fa2150;
+  background-image:#14456d;
 }
 
 .add-child-button {
@@ -85,9 +61,9 @@ select {
   font-size: 16px;
   justify-content: center;
   padding: 10px 12px;
-  margin: 5px 50px;
+  margin: 5px auto;
   text-decoration: none;
-  width: 280px;
+  width: 50%;
   border: 0;
   cursor: pointer;
   user-select: none;
@@ -96,8 +72,12 @@ select {
 }
 
 .add-child-button:hover {
-  background-image:#3185fc;
+  background-image:#0f53b3;
 }
+
+
+/* CSS */
+
 
 
 .kinderen_veld {
@@ -136,3 +116,208 @@ select {
    font-family: Arial, Helvetica, sans-serif;
    font-size: 50px;
  }
+
+ @media only screen and (max-width: 600px) {
+
+  .heart-symbol {
+    display: none !important;
+  }
+
+  .container {
+    background: #A39A92;
+    margin: 30px auto;
+    width: 99%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .inner-container {
+    padding: 0.5rem; 
+  }
+
+  .aanhang {
+    font-size: 16px;
+  }
+  
+
+  h1 {
+    width: fit-content; /* or a fixed width in pixels */
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem !important;
+  }
+
+  .child-field {
+    margin-left: 25%;
+    margin-top: 0.1rem;
+  }
+
+.kinderen_veld {
+  display: flex;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.familielid-label,
+.geliefde-label {
+  font-weight: bold;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.pappa,
+.mamma {
+  margin-bottom: 10px;
+}
+
+.kind-toevoegen{
+  background-color: #14456d;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 10px 17px;
+  margin: 5px auto;
+  text-decoration: none;
+  width: 98%;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.kind-toevoegen:hover {
+  background-image:#062c4b;
+}
+
+.add-child-button {
+  background-color: #3185fc;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 10px 12px;
+  margin: 5px auto;
+  text-decoration: none;
+  width: 50%;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.add-child-button:hover {
+  background-image:#3185fc;
+}
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  .container {
+    background: #A39A92;
+    margin: 30px auto;
+    width: 50%;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    width: fit-content; /* or a fixed width in pixels */
+    padding-top: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+  }
+
+  .aanhang {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  .child-field {
+    margin-left: 100px;
+  }
+
+  .kind-toevoegen{
+    background-color: #14456d;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    padding: 10px 17px;
+    margin: 5px 0;
+    text-decoration: none;
+    width: 400px;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .kind-toevoegen:hover {
+    background-image:#012847;
+  }
+  
+  .add-child-button {
+    background-color: #3185fc;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    padding: 10px 12px;
+    margin: 5px 50px;
+    text-decoration: none;
+    width: 280px;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .add-child-button:hover {
+    background-image:#3185fc;
+  }
+
+  .verstuur-knop {
+    background-color: #ffffff;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-size: 1rem;
+    margin: 10px 0;
+    justify-content: center;
+    padding: 10px 17px;
+    text-decoration: none;
+    width: 400px;
+    border: 2px black;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+}

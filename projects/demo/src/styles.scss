@@ -1,3 +1,11 @@
+$color: #666;
+$over_color: #000;
+$background_color_male: lightblue;
+$background_color_female: lightpink;
+$border_color: #94a0b4;
+$border_color_no_hover: black;
+
+
 .node.self-leaf {
   background-color: transparent !important;
   background-image: none !important;
@@ -9,11 +17,13 @@ div span.node:only-child {
   border: none;
 }
 
-.node {
-  border: 1px solid #ccc;
+
+.tree li div {
+  border: 1px solid #14456d !important;
+
 }
 
 
-div .top {
-  border: none !important;
-}
+// div .top {
+//   border: none !important;
+// }

@@ -25,7 +25,7 @@ $border_color: #94a0b4;
         position: absolute;
         top: 0;
         left: 50%;
-        border-left: 1px solid #ccc;
+        border-left: 1px solid black;
         width: 0;
         height: 20px;
       }
@@ -45,7 +45,7 @@ $border_color: #94a0b4;
       position: absolute;
       top: 0;
       right: 50%;
-      border-top: 1px solid #ccc;
+      border-top: 1px solid black;
       width: 50%;
       height: 20px;
     }
@@ -54,12 +54,12 @@ $border_color: #94a0b4;
       position: absolute;
       top: 0;
       right: 50%;
-      border-top: 1px solid #ccc;
+      border-top: 1px solid black;
       width: 50%;
       height: 20px;
       right: auto;
       left: 50%;
-      border-left: 1px solid #ccc;
+      border-left: 1px solid black;
     }
     &:only-child {
       &::after {
@@ -85,14 +85,14 @@ $border_color: #94a0b4;
         border: 0 none;
       }
       &::before {
-        border-right: 1px solid #ccc;
+        border-right: 1px solid black;
         border-radius: 0 5px 0 0;
         -webkit-border-radius: 0 5px 0 0;
         -moz-border-radius: 0 5px 0 0;
       }
     }
     div {
-      border: 1px solid #ccc;
+      border: 1px solid black;
       padding: 5px 10px;
       text-decoration: none;
       color: $color;
@@ -106,6 +106,7 @@ $border_color: #94a0b4;
       transition: all 0.5s;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
+      
       .node {
         display: inline-block;
         min-width: 90px;
