@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-programma',
@@ -6,11 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./programma.component.css']
 })
 export class ProgrammaComponent {
-  title = "test";
     programData = [
       {
         time: '14:00',
         activity: 'Officiële opening familiedag',
+        age: ''
+      },
+      {
+        time: '14:05',
+        activity: 'Groepsfoto familiedag',
         age: ''
       },
       {
@@ -79,5 +85,13 @@ export class ProgrammaComponent {
         age: ''
       }
     ];
+
+    constructor(private titleService: Title) {}
+
+    ngOnInit() {
+      this.titleService.setTitle('Programma');
+    }
+  
   }
+
 

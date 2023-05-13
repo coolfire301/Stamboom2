@@ -2,6 +2,8 @@ import { AfterViewInit, Component, ElementRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from '../app/app.component';
+import { Title } from '@angular/platform-browser';
+
 
 interface TextField {
   show: boolean;
@@ -33,9 +35,10 @@ export class StamboomAanvullenComponent implements AfterViewInit {
 
   familyMembers: string[] = [];
 
-  constructor(private elementRef: ElementRef, private http: HttpClient, private Appcomponent:AppComponent) {}
+  constructor(private elementRef: ElementRef, private http: HttpClient, private Appcomponent:AppComponent,  private titleService: Title) {}
 
   async ngOnInit() {
+    this.titleService.setTitle('Stamboom vullen');
     //Ouders gedeelte
 console.log(this.ROOT_URL_ouders)
     this.myData = await this.http.get(this.ROOT_URL_ouders).toPromise();
@@ -97,6 +100,10 @@ console.log(this.ROOT_URL_ouders)
     } else{
     this.http.get(sendString + "/" + kinderen.slice(0,-1) + "/" + kleinkinder.slice(0,-1)).subscribe()
     console.log(sendString + "/" + kinderen.slice(0,-1) + "/" + kleinkinder.slice(0,-1))}
+    this.textFields = [];
+this.selectedFamilyMember = undefined;
+this.aanhang = "";
+    alert("Bedankt voor het versturen. Bekijk de stamboom om jou familie te zien!")
   }
 }
 

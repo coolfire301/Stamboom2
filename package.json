@@ -15,7 +15,7 @@
     "name": "fmq"
   },
   "repository": {
-    "type":"git",
+    "type": "git",
     "url": "https://github.com/fmq/ng-family-tree"
   },
   "bugs": {
@@ -38,7 +38,7 @@
     "d3": "^7.8.4",
     "gojs": "^2.3.5",
     "gojs-angular": "^2.0.6",
-    "rxjs": "~7.8.0",
+    "rxjs": "^7.8.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },

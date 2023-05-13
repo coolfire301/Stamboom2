@@ -11,7 +11,8 @@ import { TreeNode } from '../../../ng-family-tree/src/lib/models/node.model';
 })
 export class AppComponent implements OnInit {
   title = 'familytree';
-  apiUrl = 'https://familiedag2023.nl:8080';
+  //apiUrl = 'https://familiedag2023.nl:8080';
+  apiUrl = 'http://localhost:8080';
 
 
   onLeafSelected(data) {
