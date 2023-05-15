@@ -50,7 +50,19 @@ console.log(this.ROOT_URL_ouders)
 
   showTextbox(): void {
     this.showAdditionalTextbox = this.selectedFamilyMember != null;
+    if (this.showAdditionalTextbox) {
+      // Find the corresponding naam2 value based on the selectedFamilyMember
+      const index = this.naam1.indexOf(this.selectedFamilyMember);
+      if (index !== -1) {
+        this.aanhang = this.naam2[index];
+      } else {
+        this.aanhang = ''; // Reset the value if no corresponding naam2 found
+      }
+    } else {
+      this.aanhang = ''; // Reset the value when the textbox is not shown
+    }
   }
+  
 
   toggleTextField() {
     const textField = { show: true, childAdded: false, childLimitReached: false, children: [], geliefde: "", familyMember: "" };

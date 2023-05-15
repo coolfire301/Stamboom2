@@ -12,7 +12,7 @@
           <select [(ngModel)]="selectedFamilyMember" (change)="showTextbox()">
             <option *ngFor="let familyMember of familyMembers" [value]="familyMember">{{ familyMember }}</option>
           </select>
-          <input class="aanhang" placeholder="Partner" *ngIf="showAdditionalTextbox" type="text" [(ngModel)]="aanhang">
+          <input class="aanhang" placeholder="Partner" *ngIf="showAdditionalTextbox" type="text" [(ngModel)]="aanhang" readonly>
         </div>
 
         <div *ngFor="let textField of textFields">
@@ -23,7 +23,7 @@
             </div>
             <div class="heart-symbol">&#10084;</div>
             <div class="label-input">
-              <label class="geliefde-label">Geliefde</label>
+              <label class="geliefde-label">Partner</label>
               <input *ngIf="textField.show" type="text" [(ngModel)]="textField.geliefde" class="mamma">
             </div>
           </div>
