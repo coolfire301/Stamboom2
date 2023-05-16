@@ -10,6 +10,11 @@ import { Title } from '@angular/platform-browser';
 export class ProgrammaComponent {
     programData = [
       {
+        time: '13:30',
+        activity: 'Ontvangst',
+        age: ''
+      },
+      {
         time: '14:00',
         activity: 'Officiële opening familiedag',
         age: ''
