@@ -86,8 +86,18 @@ export class ProgrammaComponent {
       },
       {
         time: '',
-        activity: 'Frietkraam komt.',
+        activity: 'Frietkraam komt',
         age: ''
+      },
+      {
+        time: '',
+        activity: 'Kampvuur',
+        age: ''
+      },
+      {
+        time: '21:00',
+        activity: 'Opruimen',
+        age: 'Organisatie'
       }
     ];
 
